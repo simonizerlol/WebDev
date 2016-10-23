@@ -1,0 +1,89 @@
+	body{
+		margin:0px;
+	}
+	.darkgreen { 
+		background-color: #003333; 
+		margin:0px;
+	}
+	.alittledarkgreen {
+		background-color: #006600; 
+		margin:0px; 
+	}
+	.brightgreen {
+		background-color: #99FF99;
+	}
+	.MNL {
+		font-size:18pt; 
+		color: #2B2B2B; 
+		font-family: "Arial";
+	}
+	.blog {
+		font-size:48pt; 
+		color:#ffffff; 
+		font-family: "Myriad Pro"; 
+		margin:0px;
+	}
+	.description{
+		font-size:24pt; 
+		color:#ffffff; 
+		font-family: "Myriad Pro"; 
+		margin:0px;
+	}
+	#verticalLine {
+		border-left: thick solid #339933;
+	}
+	.bottomtitle{
+		color: ;
+	}
+	.bottom {
+		background-color: #006633; 
+		margin: 0; 
+		padding: 0; 
+		height: 100%; 
+		width: 100%; 
+		margin:0px; 
+	}
+	ul.bottomall{
+		padding:30;
+
+	}
+	ul.a {
+	position: relative;	
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #99FF99;
+	}
+	li.a {
+	display: inline-block;
+	}
+	li.b {
+	display: inline-block;
+    position: absolute;
+    padding-left: 100px;
+	}
+	li.c{
+	float: right;
+	display: inline-block;
+	}
+	li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	}
+	li.a a.active {
+    color: white;
+    background-color: #4CAF50;
+	}	
+	.headerC{color:#BDB76B; margin:0px;}
+	.headerW{color:#ccc; margin:0px;}
+	.readmore{color:#009900; display: inline-block; margin:0;}
+	.marginzero{margin:0; padding-top:20px;}
+
+	.bottom .a h5,.bottom .a p, .bottom .b p,.bottom .c p {
+  		margin: 0;
+	}

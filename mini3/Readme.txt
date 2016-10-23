@@ -1,0 +1,1 @@
+I used chrome as my internet browser, i applied two css files to my html webpage, the footer.css overwrites mystyle.css

@@ -1,0 +1,75 @@
+.bottom {
+  margin-top: 20px;
+  padding: 30px 0px;
+}
+.bottomall {
+  margin: 0;
+}
+.bottomall h5 {
+  margin: 0;
+  padding: 5px 0px;
+  font-size: 20px;
+}
+.bottomall p {
+  font-size: 14px;
+}
+.bottomall .c {
+  font-size: 14px;
+  padding-right: 20px;
+}
+.verticalLine {
+  border-left: 3px solid green;
+}
+.main-container {
+  position: relative;
+}
+.content {
+  display: inline-block;
+  width: 60%;
+  padding: 40px;
+}
+.sidebars {
+  background-color: #e0e0d1;
+  width: 30%;
+  float: right;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.sidebar2{
+  padding-left: 30px;
+  display: block;
+}
+.sidebartext{
+  margin:0;
+}
+.alittledarkgreen {
+  padding: 20px 0px;
+  padding-left: 40px;
+}
+.alittledarkgreen p {
+  padding-right: 30px;
+  display: inline-block;
+}
+.darkgreen {
+  padding: 5px 40px;
+}
+.darkgreen .headerW {
+  display: inline-block;
+}
+.darkgreen .right {
+  float: right;
+}
+.brightgreen {
+  padding: 10px 40px;
+}
+.brightgreen ul {
+  padding: 0;
+  border: none;
+}
+.brightgreen ul li {
+  padding: 5px 0px;
+  padding-right: 30px;
+}
+.brightgreen ul li a {
+  padding: 0;
+}
