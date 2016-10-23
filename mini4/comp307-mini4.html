@@ -1,0 +1,127 @@
+<!-- COMP 307 MINI 4
+  NAME: SIMON HSU
+  ID: 260610820
+Create a single webpage that displays an empty, white, canvas 400 X 300 pixels in dimension. 
+It does not matter where exactly, but below the canvas position a button. 
+This will be a tri -state button. 
+A tri-state button is a regular button except that each time it is pressed it performs a different action. 
+The first time the button is pressed, it displays a stick figure house (square with triangle) on the canvas. 
+The second time the button is pressed a sun is added (circle with 7 rays/lines). 
+The third press of the button clears the canvas back to white. 
+Pressing the button button a fourth time cycles the tri-state displaying the house once again, etc.
+
+To do this properly, when adding the sun to the canvas, do not redraw the house. Just add the sun to the canvas without redrawing the house.
+
+-->
+<!DOCTYPE HTML>
+<html>
+<head><title>Simon's little house</title></head>
+<body>
+  <canvas id="myCanvas" width="400" height="300" style="border:1px solid black;"> </canvas>
+  <input type="button" id="button" value="PRESS!">  
+<script>
+  var counter=0;
+    // tri state button
+    document.getElementById("button").addEventListener("click", function(){
+      if (counter==0) {
+        one(); 
+        counter++; 
+        }
+      else if (counter==1) {
+        two(); counter++; 
+      }
+      else {
+        clear(); counter=0; 
+      }
+    }, false);
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  function one(){
+    //draw rectangle
+
+    ctx.rect(124, 176,150, 100);
+    ctx.fillStyle = "green";
+    ctx.fill();
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "green";
+    ctx.stroke();
+
+    //draw triangle
+    ctx.beginPath();
+    ctx.moveTo(124, 176);
+    ctx.lineTo(194, 26);
+    ctx.lineTo(274, 176);
+    ctx.closePath();
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "red";
+    ctx.stroke();  
+ 
+};
+
+  function two(){
+    //draw the sun
+        var x = (c.width / 2)+120;
+        var y = (c.height / 2)-80;
+        var radius = 50;
+
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#ffff80';
+        ctx.fill();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = '#ffff00';
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(300, 0);
+        ctx.lineTo(300, 52);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(240, 18);
+        ctx.lineTo(280, 52);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(280, 9);
+        ctx.lineTo(300, 52);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(220, 40);
+        ctx.lineTo(280, 50);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(220, 50);
+        ctx.lineTo(290, 60);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(220, 60);
+        ctx.lineTo(290, 70);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(220, 68);
+        ctx.lineTo(290, 90);
+        ctx.stroke();
+        ctx.closePath();
+        
+};
+
+  function clear(){
+    ctx.clearRect(0, 0, c.width, c.height);
+  }
+
+</script>
+</body>
+</html>

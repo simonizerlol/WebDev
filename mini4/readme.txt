@@ -1,0 +1,1 @@
+i used chrome, the assignment is 100% complete except there's a tiny bug of one of the sunray not listening to me and shows up itself after a cycle.
